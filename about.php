@@ -208,7 +208,10 @@
    $filename=basename($_GET['file']);
    $filepath='destination/'.filename;
    if(!empty($filename) && file_exists($filepath)){
-     
+
+    //define headers
+    header("Cache-control:public");
+    
    }
  }
 ?>
