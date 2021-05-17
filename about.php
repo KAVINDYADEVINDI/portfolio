@@ -202,6 +202,13 @@
     <script src="js/script.js"></script>
   </body>
 </html>
-<?php
 
+<?php
+ if(!empty($_GET['file'])){
+   $filename=basename($_GET['file']);
+   $filepath='destination/'.filename;
+   if(!empty($filename) && file_exists($filepath)){
+     
+   }
+ }
 ?>
