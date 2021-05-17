@@ -36,7 +36,7 @@
               <a href = "index.html" class = "nav-link">home</a>
             </li>
             <li class = "nav-item nav-active">
-              <a href = "about.html" class = "nav-link">about</a>
+              <a href = "about.php" class = "nav-link">about</a>
             </li>
             </li>
             <li class = "nav-item">
@@ -104,7 +104,7 @@
             </ul>
           </div>
 
-          <button type = "button" class = "btn"><a href="about.html?cv.pdf">download cv</a></button>
+          <button type = "button" class = "btn"><a href="about.php?file=cv.pdf">download cv</a></button>
         </div>
       </div>
     </section>
@@ -133,7 +133,7 @@
               <i class = "fas fa-long-arrow-alt-right"></i>
               home
             </a>
-            <a href = "about.html" class = "text">
+            <a href = "about.php" class = "text">
               <i class = "fas fa-long-arrow-alt-right"></i>
               about
             </a>
@@ -202,3 +202,6 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+<?php
+
+?>
