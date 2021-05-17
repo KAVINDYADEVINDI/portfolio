@@ -212,7 +212,9 @@
     //define headers
     header("Cache-control:public");
     header("Content-Description:File Transfer");
-    
+    header("Content-Disposition: attachment; filename=$filename");
+    header("Content-Type:application/zip");
+    header("Content-transfer-Emcoding:binary");
    }
  }
 ?>
