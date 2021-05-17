@@ -1,7 +1,7 @@
 <?php
 print_r($_GET['file']);
  if(!empty($_GET['file'])){
-   $filename=basename($_GET['file']).".pdf";
+   $filename=basename($_GET['file']);
    $filepath='destination/'.$filename;
    if(!empty($filename) && file_exists($filepath)){
 
@@ -14,7 +14,6 @@ print_r($_GET['file']);
 
     readfile($filepath);
     exit;
-    
    }
     else{
       echo "This file does not exist";
