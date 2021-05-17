@@ -17,7 +17,7 @@
     font-family: var(--poppins);
     font-size: 1.7rem;
     font-weight: 800;
-    text-shadow:4px 4px 8px rgb(50, 93, 110);
+    text-shadow:4px 4px 8px rgb(33, 96, 121);
 }
 .navbar-toggler{
     border: none;
@@ -458,6 +458,7 @@
     font-size: 1.3rem;
     font-family: var(--poppins);
     font-weight: 700;
+    color: rgb(24, 112, 109);
 }
 .footer .col{
     text-align: center;
