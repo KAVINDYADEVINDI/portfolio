@@ -1,24 +1,4 @@
-<?php
- if(!empty($_GET['file'])){
-   $filename=basename($_GET['file']);
-   $filepath='destination/'.filename;
-   if(!empty($filename) && file_exists($filepath)){
 
-    //define headers
-    header("Cache-control:public");
-    header("Content-Description:File Transfer");
-    header("Content-Disposition: attachment; filename=$filename");
-    header("Content-Type:application/zip");
-    header("Content-transfer-Emcoding:binary");
-
-    readfile($filepath){
-      exit;
-    }else{
-      echo "This file does not exist";
-    }
-   }
- }
-?>
 
 <!DOCTYPE html>
 
@@ -59,7 +39,7 @@
               <a href = "index.html" class = "nav-link">home</a>
             </li>
             <li class = "nav-item nav-active">
-              <a href = "about.php" class = "nav-link">about</a>
+              <a href = "about.html" class = "nav-link">about</a>
             </li>
             </li>
             <li class = "nav-item">
@@ -127,7 +107,7 @@
             </ul>
           </div>
 
-          <button type ="submit" onclick="about.php?file=cv.pdf" class = "btn">download cv</button>
+          <button type ="button"  class = "btn"><a href="download.php?file=cv.pdf">download cv</a></button>
         </div>
       </div>
     </section>
@@ -156,7 +136,7 @@
               <i class = "fas fa-long-arrow-alt-right"></i>
               home
             </a>
-            <a href = "about.php" class = "text">
+            <a href = "about.html" class = "text">
               <i class = "fas fa-long-arrow-alt-right"></i>
               about
             </a>
