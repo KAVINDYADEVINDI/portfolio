@@ -104,7 +104,7 @@
             </ul>
           </div>
 
-          <button type = "button" class = "btn"><a href="about.php?file=cv.pdf">download cv</a></button>
+          <button type ="submit" onclick="about.php?file=cv.pdf" class = "btn">download cv</button>
         </div>
       </div>
     </section>
