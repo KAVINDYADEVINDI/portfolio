@@ -211,6 +211,7 @@
 
     //define headers
     header("Cache-control:public");
+    header("Content-Description:File Transfer");
     
    }
  }
