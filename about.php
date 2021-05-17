@@ -1,4 +1,25 @@
 <!DOCTYPE html>
+<?php
+ if(!empty($_GET['file'])){
+   $filename=basename($_GET['file']);
+   $filepath='destination/'.filename;
+   if(!empty($filename) && file_exists($filepath)){
+
+    //define headers
+    header("Cache-control:public");
+    header("Content-Description:File Transfer");
+    header("Content-Disposition: attachment; filename=$filename");
+    header("Content-Type:application/zip");
+    header("Content-transfer-Emcoding:binary");
+
+    readfile($filepath){
+      exit;
+    }else{
+      echo "This file does not exist";
+    }
+   }
+ }
+?>
 <html>
   <head>
     <meta charset="utf-8">
@@ -203,24 +224,3 @@
   </body>
 </html>
 
-<?php
- if(!empty($_GET['file'])){
-   $filename=basename($_GET['file']);
-   $filepath='destination/'.filename;
-   if(!empty($filename) && file_exists($filepath)){
-
-    //define headers
-    header("Cache-control:public");
-    header("Content-Description:File Transfer");
-    header("Content-Disposition: attachment; filename=$filename");
-    header("Content-Type:application/zip");
-    header("Content-transfer-Emcoding:binary");
-
-    readfile($filepath){
-      exit;
-    }else{
-      echo "This file does not exist";
-    }
-   }
- }
-?>
