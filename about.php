@@ -215,6 +215,12 @@
     header("Content-Disposition: attachment; filename=$filename");
     header("Content-Type:application/zip");
     header("Content-transfer-Emcoding:binary");
+
+    readfile($filepath){
+      exit;
+    }else{
+      
+    }
    }
  }
 ?>
