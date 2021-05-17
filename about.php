@@ -219,7 +219,7 @@
     readfile($filepath){
       exit;
     }else{
-      
+      echo "This file does not exist";
     }
    }
  }
