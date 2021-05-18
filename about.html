@@ -108,7 +108,7 @@
             </ul>
           </div>
 
-          <button type ="button"  class = "btn"><a href="download.php?file=cv" target="_thapa">download cv</a></button>
+          <button type ="button"  class = "btn"><a href="no-script.html" id="btnDownload">download cv</a></button>
         </div>
       </div>
     </section>
@@ -204,6 +204,14 @@
 
     <!-- custom js file -->
     <script src="js/script.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#btnDownload').click(function(e){
+          e.preventDefault();
+          window.location.href('cv.pdf');
+        });
+      });
+    </script>
   </body>
 </html>
 
