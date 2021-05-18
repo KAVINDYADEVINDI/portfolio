@@ -96,7 +96,7 @@
         </div>
 
         <div class = "col-right">
-          <form class = "contact-form">
+          <form class = "contact-form" method="post">
             <div class = "form-group">
               <input type = "text" placeholder="your name">
             </div>
@@ -107,7 +107,7 @@
               <input type = "text" placeholder="your subject">
             </div>
             <textarea rows = "5"></textarea>
-            <button type = "submit" class = "btn">send message</button>
+            <button type = "button" value="Send Email" onclick="sendEmail()" class = "btn">send message</button>
           </form>
         </div>
       </div>
@@ -202,5 +202,23 @@
 
     <!-- custom js file -->
     <script src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script type="text/javascript">
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username : "<sender’s email address>",
+          Password : "<email password>",
+          To : '<recipient’s email address>',
+          From : "<sender’s email address>",
+          Subject : "<email subject>",
+          Body : "<email body>",
+        })
+        .then(function(message){
+          alert("mail sent successfully")
+        });
+      }
+    </script>
   </body>
 </html>
