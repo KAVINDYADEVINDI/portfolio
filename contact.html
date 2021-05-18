@@ -103,9 +103,6 @@
             <div class = "form-group">        
               <input type = "email" id="email" placeholder="your email">             
             </div>
-            <div class = "form-group">
-              <input type = "text" id="subject" placeholder="your subject">
-            </div>
             <textarea rows = "5" id="message"></textarea>
             <button type = "button" value="Send Email" onclick="sendEmail()" class = "btn">send message</button>
           </form>
@@ -208,7 +205,6 @@
       function sendEmail() {
         let name=document.getElementById('name').value;
         let email=document.getElementById('email').value;
-        let subject=document.getElementById('subject').value;
         let message=document.getElementById('message').value;
         
         Email.send({
@@ -217,7 +213,7 @@
           Password : "rsemekixrtcqaolk",
           To : 'kavindyadewindi12345678@gmail.com',
           From : `${email}`,
-          Subject :`${name} sent you a message <br/> ${subject}`,
+          Subject :`${name} sent you a message`,
           Body : `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
         })
         .then(function(message){
