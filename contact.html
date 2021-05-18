@@ -98,12 +98,12 @@
         <div class = "col-right">
           <form class = "contact-form" method="post">
             <div class = "form-group">
-              <input type = "text" id="name" placeholder="your name">
+              <input type = "text" id="name" placeholder="your name" required>
             </div>
             <div class = "form-group">        
-              <input type = "email" id="email" placeholder="your email">             
+              <input type = "email" id="email" placeholder="your email" required>             
             </div>
-            <textarea rows = "5" id="message"></textarea>
+            <textarea rows = "5" id="message" required></textarea>
             <button type = "button" value="Send Email" onclick="sendEmail()" class = "btn">send message</button>
           </form>
         </div>
