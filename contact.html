@@ -98,15 +98,15 @@
         <div class = "col-right">
           <form class = "contact-form" method="post">
             <div class = "form-group">
-              <input type = "text" placeholder="your name">
+              <input type = "text" id="name" placeholder="your name">
             </div>
             <div class = "form-group">        
-              <input type = "email" placeholder="your email">             
+              <input type = "email" id="email" placeholder="your email">             
             </div>
             <div class = "form-group">
-              <input type = "text" placeholder="your subject">
+              <input type = "text" id="subject" placeholder="your subject">
             </div>
-            <textarea rows = "5"></textarea>
+            <textarea rows = "5" id="message"></textarea>
             <button type = "button" value="Send Email" onclick="sendEmail()" class = "btn">send message</button>
           </form>
         </div>
@@ -206,14 +206,19 @@
 
     <script type="text/javascript">
       function sendEmail() {
+        let name=document.getElementById('name').value;
+        let email=document.getElementById('email').value;
+        let subject=document.getElementById('subject').value;
+        let message=document.getElementById('message').value;
+        
         Email.send({
           Host: "smtp.gmail.com",
           Username : "kavindyadewindi12345678@gmail.com",
           Password : "rsemekixrtcqaolk",
           To : 'kavindyadewindi12345678@gmail.com',
-          From : "kavindyadewindi12345678@gmail.com",
-          Subject :"sent message",
-          Body : "hi",
+          From : `${email}`,
+          Subject :`${name} sent you a message <br/> ${subject}`,
+          Body : `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
         })
         .then(function(message){
           alert("mail sent successfully")
