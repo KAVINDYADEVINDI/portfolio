@@ -303,6 +303,9 @@
   background: url(../assets/quiz.png) center/cover no-repeat;
 }
 .projects .row2 .item:nth-child(5) {
+  background: url(../assets/groupwork.png) center/cover no-repeat;
+}
+.projects .row2 .item:nth-child(5) {
   background: url(../assets/blog\ app.png) center/cover no-repeat;
 }
 
