@@ -345,6 +345,10 @@
   font-weight: 400;
   font-family: var(--poppins);
 }
+.projects .item .item-overlay a:hover {
+  color: rgb(14, 131, 96);
+  font-size: 1.35rem;
+}
 .projects .item .item-overlay h3 {
   text-transform: uppercase;
   font-size: 1rem;
