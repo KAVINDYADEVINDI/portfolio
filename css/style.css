@@ -279,10 +279,10 @@
   background: url(../assets/chat.png) center/cover no-repeat;
 }
 .projects .row .item:nth-child(4) {
-  background: url(../assets/ceylon.jpg) center/cover no-repeat;
+  background: url(../assets/blogapp.png) center/cover no-repeat;
 }
 .projects .row .item:nth-child(5) {
-  background: url(../assets/weather.png) center/cover no-repeat;
+  background: url(../assets/quizapp.png) center/cover no-repeat;
 }
 
 
