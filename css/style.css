@@ -265,7 +265,7 @@
 }
 .projects .item {
   margin: 2rem 0;
-  height:500px;
+  height: 500px;
   width: 100%;
   position: relative;
 }
@@ -288,25 +288,25 @@
 /* UI/UX design */
 
 .projects .row2 .item:nth-child(1) {
-  background: url(../assets/fitness.png) center/cover no-repeat;
+  background: url(../assets/quiz.png) center/cover no-repeat;
 }
 .projects .row2 .item:nth-child(2) {
-  background: url(../assets/wetcare.png) center/cover no-repeat;
+  background: url(../assets/blog\ app.png) center/cover no-repeat;
 }
 .projects .row2 .item:nth-child(3) {
-  background: url(../assets/music.png) center/cover no-repeat;
+  background: url(../assets/wetcare.png) center/cover no-repeat;
 }
 .projects .row2 .item:nth-child(4) {
   background: url(../assets/weather.png) center/cover no-repeat;
 }
 .projects .row2 .item:nth-child(5) {
-  background: url(../assets/quiz.png) center/cover no-repeat;
+  background: url(../assets/fitness.png) center/cover no-repeat;
 }
-.projects .row2 .item:nth-child(5) {
+.projects .row2 .item:nth-child(6) {
+  background: url(../assets/music.png) center/cover no-repeat;
+}
+.projects .row2 .item:nth-child(7) {
   background: url(../assets/groupwork.png) center/cover no-repeat;
-}
-.projects .row2 .item:nth-child(5) {
-  background: url(../assets/blog\ app.png) center/cover no-repeat;
 }
 
 .projects .item .item-overlay {
