@@ -288,19 +288,22 @@
 /* UI/UX design */
 
 .projects .row2 .item:nth-child(1) {
-  background: url(../assets/ceylon.jpg) center/cover no-repeat;
+  background: url(../assets/fitness.png) center/cover no-repeat;
 }
 .projects .row2 .item:nth-child(2) {
-  background: url(../assets/weather.png) center/cover no-repeat;
+  background: url(../assets/wetcare.png) center/cover no-repeat;
 }
 .projects .row2 .item:nth-child(3) {
-  background: url(../assets/chat.png) center/cover no-repeat;
+  background: url(../assets/music.png) center/cover no-repeat;
 }
 .projects .row2 .item:nth-child(4) {
-  background: url(../assets/blogapp.png) center/cover no-repeat;
+  background: url(../assets/weather.png) center/cover no-repeat;
 }
 .projects .row2 .item:nth-child(5) {
-  background: url(../assets/quizapp.png) center/cover no-repeat;
+  background: url(../assets/quiz.png) center/cover no-repeat;
+}
+.projects .row2 .item:nth-child(5) {
+  background: url(../assets/blog\ app.png) center/cover no-repeat;
 }
 
 .projects .item .item-overlay {
