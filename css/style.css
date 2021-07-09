@@ -265,7 +265,7 @@
 }
 .projects .item {
   margin: 2rem 0;
-  height: 500px;
+  height: 600px;
   width: 100%;
   position: relative;
 }
@@ -285,6 +285,21 @@
   background: url(../assets/quizapp.png) center/cover no-repeat;
 }
 
+.projects .row3 .item:nth-child(1) {
+  background: url(../assets/ceylon.jpg) center/cover no-repeat;
+}
+.projects .row3 .item:nth-child(2) {
+  background: url(../assets/weather.png) center/cover no-repeat;
+}
+.projects .row3 .item:nth-child(3) {
+  background: url(../assets/chat.png) center/cover no-repeat;
+}
+.projects .row3 .item:nth-child(4) {
+  background: url(../assets/blog\ app.png) center/cover no-repeat;
+}
+.projects .row3 .item:nth-child(5) {
+  background: url(../assets/quiz.png) center/cover no-repeat;
+}
 /* UI/UX design */
 
 .projects .row2 .item:nth-child(1) {
